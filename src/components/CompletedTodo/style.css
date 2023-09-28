@@ -1,0 +1,74 @@
+.completed-todo-heading {
+	width: 90%;
+	margin: 2rem auto;
+	padding: 0.5rem;
+	box-sizing: border-box;
+	text-align: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 20;
+}
+.completed-todo-heading span {
+	background-color: rgb(201, 233, 255);
+	z-index: 40;
+	padding: 0 0.6rem;
+	font-size: 1.3rem;
+}
+.completed-todo-heading::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background-color: black;
+	left: 0;
+	z-index: 10;
+}
+.completed-todo {
+	overflow: hidden;
+	width: 90%;
+	list-style-type: none;
+	margin: auto;
+	padding-left: 0;
+}
+
+.completed-todo .delete-btn {
+	position: absolute;
+	right: 10px;
+	transform: translateX(200%);
+}
+.completed-todo li:hover .delete-btn {
+	transform: translateX(0%);
+}
+.delete-message {
+	background-color: red;
+	width: 90%;
+	color: white;
+	margin: auto;
+	box-sizing: border-box;
+	padding: 0.6rem;
+	text-align: center;
+	border-radius: 0.3rem;
+}
+
+.delete-list-class {
+	background-color: white;
+	margin-top: 0.4rem;
+	padding: 0.8rem 0.8rem;
+	box-sizing: border-box;
+	margin-left: 0;
+	overflow: hidden;
+	border-radius: 0.3rem;
+	text-overflow: ellipsis;
+	position: relative;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	transition: all 300ms ease-in-out;
+	transform-origin: left;
+}
+.deleting-animation {
+	background-color: rgb(227, 26, 26);
+	transform: scaleX(0);
+}

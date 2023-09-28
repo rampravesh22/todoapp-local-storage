@@ -1,0 +1,14 @@
+.todo-list-wrapper {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	flex-direction: column;
+	width: 90%;
+}
+.todo-list-wrapper ul {
+	padding-left: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+}
